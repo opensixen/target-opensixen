@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.6"?>
+
+<target name="Running Platform">
+<locations>
+<location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit">
+<unit id="org.eclipse.riena.build.feature.core.sdk.feature.group" version="2.0.0.v20100615_2_0_0"/>
+<unit id="org.eclipse.riena.build.feature.samples.sdk.feature.group" version="2.0.0.v20100615_2_0_0"/>
+<unit id="org.eclipse.riena.build.feature.sdk.feature.group" version="2.0.0.v20100615_2_0_0"/>
+<repository location="http://download.eclipse.org/rt/riena/2.0.0.0/update/"/>
+</location>
+<location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit">
+<unit id="org.eclipse.rcp.source.feature.group" version="3.6.0.v20100519-9OArFKvFtsd7WLUKh-DcYTS"/>
+<unit id="org.eclipse.equinox.sdk.feature.group" version="3.6.0.v20100601-7H7R-7v8rtGVR34XkO3kfH3DUO07"/>
+<repository location="http://download.eclipse.org/releases/helios"/>
+</location>
+<location includeAllPlatforms="false" includeMode="slicer" type="InstallableUnit">
+<unit id="org.eclipse.platform.sdk" version="3.6.0.I20100608-0911"/>
+<unit id="org.eclipse.sdk.feature.group" version="3.6.0.v20100427-7Q7m-DPY2dP0s7TnP1vxqsprbrvrHJwHMVz0mb8mhRXmu"/>
+<unit id="org.eclipse.rcp.sdk.id" version="3.6.0.I20100608-0911"/>
+<unit id="org.eclipse.sdk.ide" version="3.6.0.I20100608-0911"/>
+<repository location="http://download.eclipse.org/releases/helios"/>
+</location>
+</locations>
+<environment>
+<os>linux</os>
+<ws>gtk</ws>
+<arch>x86</arch>
+<nl>es_ES</nl>
+</environment>
+<launcherArgs>
+<vmArgs>-Dosgi.requiredJavaVersion=1.5 -XX:MaxPermSize=256m -Xms40m -Xmx512m</vmArgs>
+</launcherArgs>
+</target>
